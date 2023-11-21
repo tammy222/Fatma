@@ -1,0 +1,121 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #efe9e7; /* Soft beige background */
+    color: #4e342e; /* Dark brown text color for better readability */
+    line-height: 2.5; /* Increased line height for readability */
+    text-align: left; /* Text aligned to the left */
+}
+
+/* Header */
+header {
+    background-color: #ffffff; /* White header background */
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-around; /* Evenly space navigation items */
+    align-items: center;
+    padding: 1rem;
+    background-color: #dcd7d4; /* Neutral color for the navigation bar */
+}
+
+nav a {
+    text-decoration: none;
+    color: #5a5a5a; /* Updated to a softer brown color */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #A56049; /* Warmer shade for hover effect */
+}
+
+nav img {
+    width: 80px; /* Consistent smaller profile images */
+    height: 80px; /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular images */
+    object-fit: cover; /* Ensure images fit the frame */
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+    background-color: #ffffff; /* White background for main content */
+    margin: 1rem auto;
+    max-width: 1200px; /* Max width for content area */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Consistent shadow as header */
+}
+
+/* Footer */
+footer {
+    background-color: #dcd7d4; /* Match navigation bar */
+    color: #4e342e; /* Dark brown text to match body */
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+/* Utility Classes */
+.container {
+    width: 95%;
+    max-width: 1200px; /* Responsive max width */
+    margin: 0 auto;
+}
+
+/* Responsive Images */
+img {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for a soft look */
+}
+
+/* Cards or Links */
+.card {
+    background-color: #ffffff; /* Card background */
+    border-radius: 5px; /* Rounded edges */
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center; /* Center content within cards */
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Elevate card on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin-bottom: 1rem;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    main {
+        margin: 1rem;
+    }
+}
